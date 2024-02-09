@@ -1,52 +1,60 @@
 import { Animal } from "./Animal";
 
- export class Habitat{
+/**
+ * Classe que representa um habitat para animais.
+ */
+export class Habitat {
+    /**
+     * Propriedade privada que armazena o nome do habitat.
+     */
     private nome: string;
+
+    /**
+     * Propriedade privada que armazena a lista de animais no habitat.
+     */
     private listaAnimais: Array<Animal>;
 
-    constructor(_nome: string, _listaAnimais: Array<Animal>){
+    /**
+     * Construtor da classe Habitat.
+     * @param _nome O nome do habitat.
+     * @param _listaAnimais A lista de animais no habitat.
+     */
+    constructor(_nome: string, _listaAnimais: Array<Animal>) {
+        // Inicializa as propriedades do habitat com os valores fornecidos.
         this.nome = _nome;
         this.listaAnimais = _listaAnimais;
     }
 
     /**
-     * Retorna o nome do habitat.
-     * 
+     * Obtém o nome do habitat.
      * @returns O nome do habitat.
      */
-
     public getNome(): string {
         return this.nome;
     }
 
     /**
      * Define o nome do habitat.
-     * 
-     * @param_nome O nome a ser atribuído ao habitat.
+     * @param nome O nome a ser atribuído ao habitat.
      */
-
-    public setNome(_nome: string): void{
-        this.nome = _nome;
+    public setNome(nome: string): void {
+        this.nome = nome;
     }
 
     /**
-     * Retorna a lista de animais do habitat.
-     * 
-     * @returns A lista de animais do habitat.
+     * Obtém a lista de animais no habitat.
+     * @returns A lista de animais no habitat.
      */
-
     public getListaAnimais(): Array<Animal> {
         return this.listaAnimais;
     }
 
     /**
-     * Define a lista de animais do habitat.
-     * 
-     * @param_listaAnimais A lista de animais a ser atribuída ao habitat.
+     * Define a lista de animais no habitat.
+     * @param _listaAnimais A lista de animais a ser atribuída ao habitat.
      */
-
     public setListaAnimais(_listaAnimais: Array<Animal>): void {
+        // Atualiza a lista de animais no habitat com a lista fornecida.
         this.listaAnimais = _listaAnimais;
     }
 }
-

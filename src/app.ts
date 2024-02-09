@@ -5,6 +5,7 @@ import { Reptil } from './model/Reptil';
 import { Mamifero } from './model/Mamifero';
 import { Habitat } from './model/Habitat';
 import { Atracao } from './model/Atracao';
+import { Zoologico } from './model/Zoologico';
 
 const server = express();
 const port = 3000;
