@@ -1,6 +1,6 @@
 import { Animal } from "./Animal";
 
-class Habitat{
+ export class Habitat{
     private nome: string;
     private listaAnimais: Array<Animal>;
 
