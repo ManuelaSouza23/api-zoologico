@@ -4,6 +4,9 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 export class DatabaseModel {
+    static query(arg0: string) {
+        throw new Error("Method not implemented.");
+    }
     
     private _config: object;
     private _pool: pg.Pool;
