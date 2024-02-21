@@ -1,32 +1,34 @@
 import { Animal } from "./Animal";
 
 /**
- * Classe que representa um habitat para animais.
+ * Representa um habitat no zoológico, onde os animais vivem.
  */
 export class Habitat {
+
     /**
-     * Propriedade privada que armazena o nome do habitat.
+     * O nome do habitat.
      */
     private nome: string;
 
     /**
-     * Propriedade privada que armazena a lista de animais no habitat.
+     * A lista de animais que habitam este habitat.
      */
     private listaAnimais: Array<Animal>;
 
     /**
-     * Construtor da classe Habitat.
+     * Cria uma nova instância de Habitat.
+     * 
      * @param _nome O nome do habitat.
-     * @param _listaAnimais A lista de animais no habitat.
+     * @param _listaAnimais A lista de animais que habitam o habitat.
      */
     constructor(_nome: string, _listaAnimais: Array<Animal>) {
-        // Inicializa as propriedades do habitat com os valores fornecidos.
         this.nome = _nome;
         this.listaAnimais = _listaAnimais;
     }
 
     /**
      * Obtém o nome do habitat.
+     * 
      * @returns O nome do habitat.
      */
     public getNome(): string {
@@ -35,26 +37,28 @@ export class Habitat {
 
     /**
      * Define o nome do habitat.
-     * @param nome O nome a ser atribuído ao habitat.
+     * 
+     * @param _nome O nome a ser atribuído ao habitat.
      */
-    public setNome(nome: string): void {
-        this.nome = nome;
+    public setNome(_nome: string): void {
+        this.nome = _nome;
     }
 
     /**
-     * Obtém a lista de animais no habitat.
-     * @returns A lista de animais no habitat.
+     * Obtém a lista de animais do habitat.
+     * 
+     * @returns A lista de animais do habitat.
      */
     public getListaAnimais(): Array<Animal> {
         return this.listaAnimais;
     }
 
     /**
-     * Define a lista de animais no habitat.
+     * Define a lista de animais do habitat.
+     * 
      * @param _listaAnimais A lista de animais a ser atribuída ao habitat.
      */
     public setListaAnimais(_listaAnimais: Array<Animal>): void {
-        // Atualiza a lista de animais no habitat com a lista fornecida.
         this.listaAnimais = _listaAnimais;
     }
 }
