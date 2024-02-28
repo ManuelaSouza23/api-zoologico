@@ -1,20 +1,33 @@
 /**
- * Classe que representa um Animal.
+ * Representa um animal no zoológico.
  */
 export class Animal {
-    // Propriedades privadas que armazenam informações sobre o animal.
+
+    /**
+     * O nome do animal.
+     */
     private nome: string;
+
+    /**
+     * A idade do animal.
+     */
     private idade: number;
+
+    /**
+     * O gênero do animal (ex: "macho", "fêmea", "desconhecido").
+     */
     private genero: string;
 
     /**
-     * Construtor da classe Animal.
+     * Cria uma nova instância de Animal.
+     * 
      * @param _nome O nome do animal.
      * @param _idade A idade do animal.
      * @param _genero O gênero do animal.
      */
-    constructor(_nome: string, _idade: number, _genero: string) {
-        // Inicializa as propriedades do animal com os valores fornecidos.
+    constructor(_nome: string,
+                _idade: number,
+                _genero: string) {
         this.nome = _nome;
         this.idade = _idade;
         this.genero = _genero;
@@ -22,6 +35,7 @@ export class Animal {
 
     /**
      * Obtém o nome do animal.
+     * 
      * @returns O nome do animal.
      */
     public getNome(): string {
@@ -30,6 +44,7 @@ export class Animal {
 
     /**
      * Define o nome do animal.
+     * 
      * @param nome O nome a ser atribuído ao animal.
      */
     public setNome(nome: string): void {
@@ -38,6 +53,7 @@ export class Animal {
 
     /**
      * Obtém a idade do animal.
+     * 
      * @returns A idade do animal.
      */
     public getIdade(): number {
@@ -46,6 +62,7 @@ export class Animal {
 
     /**
      * Define a idade do animal.
+     * 
      * @param idade A idade a ser atribuída ao animal.
      */
     public setIdade(idade: number): void {
@@ -54,6 +71,7 @@ export class Animal {
 
     /**
      * Obtém o gênero do animal.
+     * 
      * @returns O gênero do animal.
      */
     public getGenero(): string {
@@ -62,6 +80,7 @@ export class Animal {
 
     /**
      * Define o gênero do animal.
+     * 
      * @param genero O gênero a ser atribuído ao animal.
      */
     public setGenero(genero: string): void {
